@@ -8953,7 +8953,8 @@ input:-webkit-autofill, input:-webkit-autofill:active, input:-webkit-autofill:fo
         padding: 12px 11px
     }
     .project-description {
-        margin-top: 0
+        padding-bottom: 130px;
+        margin-top: 0;
     }
     .project-description h5 {
         font-size: 14px;
