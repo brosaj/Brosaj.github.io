@@ -9759,10 +9759,10 @@ button.mfp-arrow:after, button.mfp-arrow:before {
 .post-preview {
     -webkit-transition: all .2s ease-in-out!important;
     transition: all .2s ease-in-out!important;
-    width: 480px;
+    width: 380px;
     display: inline-block;
     margin-right: 40px;
-    white-space: normal
+    white-space: normal;
 }
 
 .post-preview:last-child {
@@ -9798,7 +9798,10 @@ button.mfp-arrow:after, button.mfp-arrow:before {
 
 @media (max-width:767px) {
     .post-preview {
-        width: 100%
+        width: 70%;
+        margin: 0 auto !important;
+        display: block;
+        margin-bottom: 30px !important;
     }
     .post-preview a {
         display: inline;
