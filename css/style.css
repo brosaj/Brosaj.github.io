@@ -9731,8 +9731,8 @@ button.mfp-arrow:after, button.mfp-arrow:before {
     margin: 0 -15px
 }
 
-@media (max-width:991px), (max-height:768px) {
-    .preview-wrapper {
+@media (min-width:991px), (max-height:768px) {
+    /* .preview-wrapper {
         padding-top: 0;
         white-space: normal;
         margin: 130px 0 0;
@@ -9749,7 +9749,7 @@ button.mfp-arrow:after, button.mfp-arrow:before {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         flex-direction: row
-    }
+    } */
 }
 
 .preview-wrapper.sidebar-pushed {
@@ -9771,8 +9771,8 @@ button.mfp-arrow:after, button.mfp-arrow:before {
 
 @media (max-width:992px), (max-height:768px) {
     .post-preview {
-        width: 345px;
-        margin: 0 0 65px
+        /* width: 345px;
+        margin: 0 0 65px */
     }
 }
 
