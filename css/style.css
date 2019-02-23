@@ -7386,8 +7386,8 @@ input:-webkit-autofill, input:-webkit-autofill:active, input:-webkit-autofill:fo
     left: 0;
     right: 0;
     bottom: 0;
-    height: 50px;
-    z-index: 10
+    height: 100px;
+    z-index: 10;
 }
 
 .menu-mobile .menu-icon-wrapper .toggle-icon {
@@ -7395,7 +7395,8 @@ input:-webkit-autofill, input:-webkit-autofill:active, input:-webkit-autofill:fo
     cursor: pointer;
     max-width: 20px;
     height: 15px;
-    margin: 20px auto 0
+    transform: scale(1.5);
+    margin: 40px auto 0;
 }
 
 .menu-mobile .menu-icon-wrapper .toggle-icon span {
@@ -7405,11 +7406,11 @@ input:-webkit-autofill, input:-webkit-autofill:active, input:-webkit-autofill:fo
 
 .menu-mobile .menu-icon-wrapper .toggle-icon .bar {
     width: 20px;
-    height: 1px;
+    height: 2px;
     display: block;
     position: absolute;
     left: 0;
-    right: 0
+    right: 0;
 }
 
 .menu-mobile .menu-icon-wrapper .toggle-icon .bar:first-child {
@@ -7417,15 +7418,15 @@ input:-webkit-autofill, input:-webkit-autofill:active, input:-webkit-autofill:fo
 }
 
 .menu-mobile .menu-icon-wrapper .toggle-icon .bar:last-child {
-    bottom: 0
+    bottom: 1px;
 }
 
 .menu-mobile .menu-icon-wrapper .toggle-icon span:nth-child(2) {
     position: relative;
     width: 20px;
-    height: 1px;
+    height: 2px;
     display: block;
-    top: 7px
+    top: 6px;
 }
 
 .menu-mobile .menu-icon-wrapper .toggle-icon span:nth-child(2):before {
