@@ -362,7 +362,6 @@ ul.content-skills>li>ul {
 }
 
 
-@import 'responsive';
 
 // .bounce * {
 // 	color: #333;
@@ -391,7 +390,7 @@ ul.content-skills>li>ul {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-
+  
 	button {
 		padding: 0.5rem 1rem;
 		border: none;
@@ -412,13 +411,13 @@ ul.content-skills>li>ul {
 	width: 100%;
 	max-width: 25%;
 	height: auto;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem; 
 
 	path,
 	g {
 		fill: #fff
 	}
-}
+}  
  
 .skills-intro {
 	display: flex;
@@ -439,8 +438,9 @@ ul.content-skills>li>ul {
 }
 
 
-@import 'layout';
+@import 'layout'; 
 @import 'vendor';
 @import 'animation';
+@import 'responsive';
 
 /*# sourceMappingURL=style.css.map */  
