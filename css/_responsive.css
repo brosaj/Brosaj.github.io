@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1024px) {
+  .section--intro .intro-content {
+    margin-left: 0;
+    width: 75%;
+  }
+  .section--intro .intro-content p {
+    margin-bottom: 0;
+    font-size: 1;
+  }
+  .section--intro .text {
+    font-size: 1.2rem;
+  }
+  .section--intro h1 {
+    width: 100%;
+    font-size: 2.3rem;
+  }
+
+  .section--experience .section--content {
+    width: auto;
+    margin-left: 0;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .section--container {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+    max-width: 100%;
+  }
+
+  .section--container > .section {
+    height: auto;
+    padding: 4rem 2rem;
+    max-width: 100%;
+  }
+
+  section.section.section--skills {
+    max-width: 100%;
+  }
+
+  .footer .footer--title h3 {
+    width: 88vw;
+    font-size: 2.2rem;
+  }
+
+  .footer .footer--title h3 a {
+    padding: 10px 0;
+  }
+}

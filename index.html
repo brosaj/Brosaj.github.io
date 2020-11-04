@@ -1,160 +1,493 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> _iii_______ </title>
 
-  <meta charset="utf-8">
-  <!-- <base href="/"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet">
 
-  <title>_iii_______</title>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/main.min.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/noise.js"></script>
+    <script type="text/javascript" src="./js/lax.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  </head>
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-<style>
-@-ms-viewport{
-  width: device-width;
-}
-</style>
-</head>
-
-<body>
-  <header class="container">
-    <div class="row">
-      <div class="spacer-custom-header col-12"></div>
-      <div class="header-title-small-left col-md-3">
-        <h2><a href="index.html"> <svg width="183px" height="41px" viewBox="0 0 183 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="t" transform="translate(-37.000000, -201.000000)">
-                  <rect id="Rectangle" fill="#F8F8F8" x="67" y="216" width="9" height="26" rx="3.5"></rect>
-                  <rect id="Rectangle-Copy" fill="#F8F8F8" x="67" y="201" width="9" height="9" rx="4.5"></rect>
-                  <rect id="Rectangle-Copy-3" fill="#F8F8F8" x="82" y="216" width="9" height="26" rx="3.5"></rect>
-                  <rect id="Rectangle-Copy-2" fill="#F8F8F8" x="82" y="201" width="9" height="9" rx="4.5"></rect>
-                  <rect id="Rectangle-Copy-5" fill="#F8F8F8" x="97" y="216" width="9" height="26" rx="3.5"></rect>
-                  <path d="M219.801082,236.314452 L219.801082,238.385749 C219.801082,239.337056 219.423176,240.2494 218.750501,240.922075 L218.750501,240.922075 C218.077825,241.594751 217.165481,241.972656 216.214174,241.972656 L114.968037,241.972656 C114.01673,241.972656 113.104386,241.594751 112.431711,240.922075 L112.431711,240.922075 C111.759035,240.2494 111.38113,239.337056 111.38113,238.385749 L111.38113,236.314452 C111.38113,235.363145 111.759035,234.450801 112.431711,233.778125 L112.431711,233.778125 C113.104386,233.105449 114.01673,232.727544 114.968037,232.727544 L216.214174,232.727544 C217.165481,232.727544 218.077825,233.105449 218.750501,233.778125 L218.750501,233.778125 C219.423176,234.450801 219.801082,235.363145 219.801082,236.314452 Z"
-                    id="Rectangle-Copy-6" fill="#FFFFFF"></path>
-                  <path d="M61.7937099,236.314452 L61.7937099,238.385749 C61.7937099,239.337056 61.4158047,240.2494 60.743129,240.922075 L60.743129,240.922075 C60.0704533,241.594751 59.1581093,241.972656 58.2068023,241.972656 L40.5869077,241.972656 C39.6356006,241.972656 38.7232566,241.594751 38.0505809,240.922075 L38.0505809,240.922075 C37.3779053,240.2494 37,239.337056 37,238.385749 L37,236.314452 C37,235.363145 37.3779053,234.450801 38.0505809,233.778125 L38.0505809,233.778125 C38.7232566,233.105449 39.6356006,232.727544 40.5869077,232.727544 L58.2068023,232.727544 C59.1581093,232.727544 60.0704533,233.105449 60.743129,233.778125 L60.743129,233.778125 C61.4158047,234.450801 61.7937099,235.363145 61.7937099,236.314452 Z"
-                    id="Rectangle-Copy-7" fill="#FFFFFF"></path>
-                  <rect id="Rectangle-Copy-4" fill="#F8F8F8" x="97" y="201" width="9" height="9" rx="4.5"></rect>
-                </g>
-              </g>
-            </svg></a></h2>
-      </div> <!-- <div class="col-md-3 col-sm-12 header-title-small-right offset-sm-0 offset-md-2"> <h2><strong>Hey there!</strong> Hire me in Los Angeles, CA!</h2> </div> -->
+  <body class="body">
+    <div class="percent">
+      <div class="fill"></div>
+      <div class="counter"></div>
     </div>
-  </header>
+    <main class="content section--container">
 
-  <div class="container mb-5 pb-5">
-    <div class="row">
-      <div class="hero-title col-md-10">
-        <h1>
-          <!-- Senior <span class="outlined">Designer</span> at Revolut --> I'm a creative web developer with a passion for designing and developing intuitive user interfaces using clean efficient code without compromising on design and aesthetics.</h1>
-      </div>
-      <div class="col-12 spacer-custom-hero"></div>
-      <div class="col-md-5 hero-title pt-5">
-        <h2> With over 8 years of experience, I've been creating and collaborating on projects ranging from apps, websites, microsites, corporate branding, email marketing and more, producing creative digital work for a variety of great brands and
-          startups. </h2>
-      </div>
-      <div class="col-12 spacer-custom-hero"></div>
+      <section class="section section--intro bounce">
 
-      <div class="col-md-10 header-one-title works">
-        <div class="row">
-          <div class="col-12">
-            <h1>Selected Works</h1>
+        <p class="tag">
+          🐈, I'm Andy <svg style="padding:0 20px" width="40" height="1" viewBox="0 0 16 1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill="#F0FFDD" d="M-827-306H397v1587H-827z" fill-rule="evenodd" />
+          </svg> Creative Web Developer
+        </p>
+        <h1 data-md-skew>
+          I'm a <span>creative web developer</span> with a passion for crafting intuitive user interfaces using clean
+          efficient code without compromising on design and aesthetics.
+        </h1>
+
+
+
+        <!-- <div class="intro-content">
+          <p class="text">With over 8 years of experience, I've been creating and collaborating on projects ranging from
+            apps, websites, microsites, corporate branding, email marketing and more, producing creative digital work
+            for a variety of great brands and startups.
+          </p>
+        </div> -->
+      </section>
+
+
+
+      <section class="section section--values">
+        <p class="lead">Values and Beliefs</p>
+        <h2 class="header-title">
+          <span>I am a detail-oriented person who strives to exceed expectations.</span>
+        </h2>
+        <div class="section--content">
+          <div>
+            <h3>Overly Dedicated</h3>
+            <p class="exp-employer-details">I am genuinely passionate about doing great work for great brands by solving
+              complex problems to make the biggest impact.
+            </p>
           </div>
-          <!--  -->
-          <div class="col-md-4">
+          <div>
+            <h3>Survival Tactics</h3>
+            <p class="exp-employer-details">I embrace difficult and technical challenges. I love learning why technology
+              works and how I can creatively implement it in my process.
+            </p>
+          </div>
+          <div>
+            <h3>Drive</h3>
+            <p class="exp-employer-details">I hold myself to the highest possible standard and only build things that I
+              am proud of.
+            </p>
+          </div>
+          <div>
+            <h3>You & Me
+            </h3>
+            <p class="exp-employer-details">I thrive off of feedback and I firmly believe it is the key to personal
+              development is essential to growth.
+
+            </p>
+          </div>
+          <!-- <div>
+            <h3>Title</h3>
+            <a class="exp-employer-title" href="#">@icgamerica</a>
+            <p class="exp-employer-details">Memphis, TN & Tucson, AZ <br>
+              Feb’13 ➔ Feb’15</p>
+          </div> -->
+          <!-- <div>
+            <h3>Title</h3>
+            <a class="exp-employer-title" href="#">@resultsgeneration</a>
+            <p class="exp-employer-details">Memphis, TN & Tucson, AZ <br>
+              April’10 ➔ Feb’13</p>
+          </div> -->
+        </div>
+
+      </section>
+
+      <section class="section section--experience">
+        <p class="lead">Work Experience</p>
+
+        <h2 class="header-title">
+          <span>I have over a decade of agency design and development experience.</span>
+        </h2>
+        <div class="section--content">
+          <div>
+            <h3>Full Stack Dev Instructor</h3>
+            <a class="exp-employer-title" href="#">@perseverenow</a>
+            <p class="exp-employer-details">Memphis, TN & Tucson, AZ <br>
+              Sept’19 ➔ Aug’20</p>
+          </div>
+          <div>
+            <h3>Wordpress Developer</h3>
+            <a class="exp-employer-title" href="#">@kindredwolf</a>
+            <p class="exp-employer-details">Denver, Co
+              Aug’18 ➔ Jan’2019 </p>
+          </div>
+          <div>
+            <h3>Designer & Developer</h3>
+            <a class="exp-employer-title" href="#">@simplefocus</a>
+            <p class="exp-employer-details">Memphis, TN<br>
+              May’17 ➔ June’18</p>
+          </div>
+          <div>
+            <h3>Developer</h3>
+            <a class="exp-employer-title" href="#">@hmgcreative</a>
+            <p class="exp-employer-details">Austin, TX<br>
+              Sept’15 ➔ Jan’16</p>
+          </div>
+          <div>
+            <h3>Developer</h3>
+            <a class="exp-employer-title" href="#">@icgamerica</a>
+            <p class="exp-employer-details">Memphis, TN & Tucson, AZ <br>
+              Feb’13 ➔ Feb’15</p>
+          </div>
+          <div>
+            <h3>Sr. Web Developer</h3>
+            <a class="exp-employer-title" href="#">@resultsgeneration</a>
+            <p class="exp-employer-details">Memphis, TN & Tucson, AZ <br>
+              April’10 ➔ Feb’13</p>
+          </div>
+        </div>
+
+      </section>
+      <div class="personal-image"
+        style=" background-image: url('https://raw.githubusercontent.com/hiiightower/hiiightower.github.io/master/img/andy.jpg'); background-size: cover; height: 100vh; width: 104vw; opacity: .2; position: relative; filter: contrast(500%) brightness(2.5); left: -8.4rem; ">
+
+      </div>
+
+      </div>
+      <section class="section section--skills">
+        <p class="lead">Skills & Capabilities</p>
+        <div class="skills-intro">
+        <h2 class="header-title">
+          <span>
+            I have the technical skills, experience and ability to deliver results.
+          </span>
+        </h2>
+        <p>Having a passion for both design and development, I am able create functional designs and engaging interfaces then bring them to life using clean code.</p>
+      </div>
+        <div class="section--content">
+          <div>
+            <h3>Design</h3>
+            <p class="lead"> I craft effective, high-quality and engaging websites that intrigue your customers and keeps them interested and informed.
+            </p>
+            <ul>
+              <li> UI/UX Design </li>
+              <li> Brand identity </li>
+              <li> User Research </li>
+              <li> Wireframing & Prototyping</li>
+              <li> Customer Journey Mapping </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Development</h3>
+            <p class="lead">I code for website performance and use best practices to deliver websites that looks great on any device while meeting your brands expectations.
+
+
+
+
+
+            </p>
+            <ul>
+              <li> Responsive Front-End Development</li>
+              <li> Backend/API integrations </li>
+              <li> Javascript</li>
+              <li> Rapid prototyping </li>
+              <li> Interaction design </li>
+              <li> Node</li>
+              <li> Wordpress</li>
+            </ul>
+          </div>
+        </div>
+        <!-- <h2 class="header-title">
+          <span>Works</span>
+        </h2> -->
+        <!-- <div class="section--content">
+          <div>
+            <img src="https://cdn.dribbble.com/users/2278933/screenshots/4537807/triangle-dribble_1x.jpg"
+              class="img-responsive">
             <a href="https://triangleinsightsgroup.com" target="_blank">
-              <img src="https://cdn.dribbble.com/users/2278933/screenshots/4537807/triangle-dribble_1x.jpg" class="img-responsive">
-              <h2>Triangle Insights Group <small>Design & Wordpress Development</small></h2>
+              <h3 class="work-title">Triangle Insights Group <small>Design &amp; Wordpress Development</small></h3>
             </a>
           </div>
-          <!--  -->
-          <!--  -->
-          <div class="col-md-4">
-            <a href="http://dandeestudio.com" target="_blank">
-              <img src="http://placekitten.com/400/300" class="img-responsive">
-              <h2>Dandee Design Studio <small>Design & Wordpress Development</small></h2>
-            </a>
-          </div>
-          <!--  -->
-          <!--  -->
-          <div class="col-md-4">
-            <a href="https://dribbble.com/shots/4537628-Project-1" target="_blank">
-              <img alt="Merrimack College" class="img-responsive" src="https://cdn.dribbble.com/users/2278933/screenshots/4537628/merriback-drillble_1x.jpg">
-              <h2>Merrimack College <small>Design & Front-End Development</small></h2>
-            </a>
-          </div>
-          <!--  -->
-          <!--  -->
-          <div class="col-md-4">
-            <a href="/case-studies/honeyheads/" target="_blank">
-              <img class="img-responsive" src="https://hiiightower.github.io/img/works/tn-honey.jpg">
-              <h2>Honey Heads <small>Design & Front-End Development</small></h2>
-            </a>
-          </div>
-          <!--  -->
+        </div> -->
+        <div class="section--img">
+        </div>
+      </section>
 
-          <!--  -->
-          <div class="col-md-4">
-            <a href="/case-studies/angelfish/" target="_blank">
-              <img class="img-responsive" src="https://hiiightower.github.io/img/works/tn-angelfish.jpg">
-              <h2>Angelfish Media <small>Design & Front-End Development</small></h2>
-            </a>
-          </div>
-          <!--  -->
-          <!--  -->
-          <div class="col-md-4">
-            <a href="https://dribbble.com/shots/4537876-Project-4" target="_blank">
-              <img class="img-responsive" src="https://cdn.dribbble.com/users/2278933/screenshots/4537876/currated-dribble.jpg">
-              <h2>Curated <small>Creative Design</small></h2>
-            </a>
-          </div>
-          <!--  -->
-          <!--  -->
-          <div class="col-md-4">
-            <a href="/case-studies/peddler/" target="_blank">
-              <img class="img-responsive" src="https://hiiightower.github.io/img/works/tn-peddler.jpg">
-              <h2>Peddler Bike Shop <small>Design & Front-End Development</small></h2>
-            </a>
-          </div>
-          <!--  -->
-          <!--  -->
-          <div class="col-md-4">
-            <a href="/case-studies/games2u/" target="_blank">
-              <img class="img-responsive" src="https://hiiightower.github.io/img/works/tn-games2u.jpg">
-              <h2>Games2U <small>Creatieve Design and Branding</small></h2>
-            </a>
-          </div>
-          <!--  -->
 
+
+      <section class="section section--proccess">
+        <p class="lead">Process</p>
+
+        <h2 class="header-title">
+          <span>I use the right tools and a proven process to successfuly build an experience that tells your brand’s story.
+          </span>
+        </h2>
+
+        <div class="section--content">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 511.875 511.875" height="512"
+              viewBox="0 0 511.875 511.875" width="512">
+              <path
+                d="m466.938 351.875c8.284 0 15-6.716 15-15v-90c0-8.284-6.716-15-15-15h-60v-55c0-8.284-6.716-15-15-15h-121v-41.875h60c8.284 0 15-6.716 15-15v-90c0-8.284-6.716-15-15-15h-150c-8.284 0-15 6.716-15 15v90c0 8.284 6.716 15 15 15h60v41.875h-121c-8.284 0-15 6.716-15 15v55h-60c-8.284 0-15 6.716-15 15v90c0 8.284 6.716 15 15 15h60v40h-60c-8.284 0-15 6.716-15 15v90c0 8.284 6.716 15 15 15h150c8.284 0 15-6.716 15-15v-90c0-8.284-6.716-15-15-15h-60v-40h60c8.284 0 15-6.716 15-15v-90c0-8.284-6.716-15-15-15h-60v-40h242v40h-60c-8.284 0-15 6.716-15 15v90c0 8.284 6.716 15 15 15h60v40h-60c-8.284 0-15 6.716-15 15v90c0 8.284 6.716 15 15 15h150c8.284 0 15-6.716 15-15v-90c0-8.284-6.716-15-15-15h-60v-40zm-271-321.875h120v60h-120zm-16 451.875h-120v-60h120zm0-160h-120v-60h120zm272 160h-120v-60h120zm-120-220h120v60h-120z" />
+            </svg>
+            <h3>Discovery and Research</h3>
+            <p>Talk to me.Who are you? And who are your users? This is where I learn more about who you are, who your
+              customers are, and what they desire. </p>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" height="512"
+              viewBox="0 0 512 512" width="512">
+              <g>
+                <path
+                  d="m497 76h-180c-8.284 0-15 6.716-15 15v75h-46c-8.284 0-15 6.716-15 15v135h-31v-225c0-8.284-6.716-15-15-15h-180c-8.284 0-15 6.716-15 15v330c0 8.284 6.716 15 15 15h180c8.284 0 15-6.716 15-15v-75h46c8.284 0 15-6.716 15-15v-135h31v225c0 8.284 6.716 15 15 15h180c8.284 0 15-6.716 15-15v-330c0-8.284-6.716-15-15-15zm-317 330h-150v-300h150v210h-30v-15c0-8.284-6.716-15-15-15h-60c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15h60c8.284 0 15-6.716 15-15v-15h30zm-60-60h-30v-30h30zm362 60h-150v-210h30v15c0 8.284 6.716 15 15 15h60c8.284 0 15-6.716 15-15v-60c0-8.284-6.716-15-15-15h-60c-8.284 0-15 6.716-15 15v15h-30v-60h150zm-90-240h30v30h-30z" />
+                <path
+                  d="m75 196h60c8.284 0 15-6.716 15-15s-6.716-15-15-15h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15z" />
+                <path
+                  d="m75 256h60c8.284 0 15-6.716 15-15s-6.716-15-15-15h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15z" />
+                <path
+                  d="m437 256h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                <path
+                  d="m437 316h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+              </g>
+            </svg>
+            <h3>Strategy</h3>
+            <p>I analyze the information and results from my discovery as a basis for to design a solution that achieves
+              our goals as efficiently as possible.
+            </p>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" height="512"
+              viewBox="0 0 512 512" width="512">
+              <g>
+                <path
+                  d="m280 317c0-8.284-6.716-15-15-15h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15z" />
+                <path
+                  d="m114.999 272h200c8.284 0 15-6.716 15-15s-6.716-15-15-15h-200c-8.284 0-15 6.716-15 15s6.716 15 15 15z" />
+                <path
+                  d="m114.999 211h200c8.284 0 15-6.716 15-15v-61c0-8.284-6.716-15-15-15h-200c-8.284 0-15 6.716-15 15v61c0 8.284 6.716 15 15 15zm15-61h170v31h-170z" />
+                <path
+                  d="m487 306.787c0-12.02-4.682-23.32-13.181-31.818-8.499-8.501-19.8-13.183-31.82-13.183-12.021 0-23.321 4.682-31.819 13.182l-5.18 5.18v-265.148c0-8.284-6.716-15-15-15h-350c-8.284 0-15 6.716-15 15v377c0 8.284 6.716 15 15 15h204.803c-3.992 8.702-6.697 18.24-7.906 28.19-3.213 26.428-18.385 54.3-18.53 54.565-2.564 4.646-2.481 10.302.217 14.872 2.698 4.569 7.61 7.373 12.917 7.373h80.287c41.355 0 75-33.645 75-75 0-3.599-.27-7.135-.763-10.6l87.795-87.793c8.499-8.5 13.18-19.8 13.18-31.82zm-112-246.787h-30v-30h30zm-60-30v30h-260v-30zm-260 60h320v220.148l-52.615 52.614c-3.465-.492-7-.763-10.598-.763-16.053 0-31.234 5.265-43.716 15h-213.071zm256.787 392h-56.868c4.795-12.006 9.857-27.539 11.759-43.19 2.74-22.545 18.025-46.81 45.109-46.81 24.814 0 45 20.186 45 45s-20.187 45-45 45zm140.819-164.606-78.277 78.276c-5.577-8.412-12.801-15.636-21.213-21.213l78.278-78.277c2.833-2.833 6.599-4.394 10.605-4.394 4.007 0 7.772 1.561 10.606 4.396 2.834 2.833 4.395 6.6 4.395 10.605 0 4.006-1.56 7.773-4.394 10.607z" />
+              </g>
+            </svg>
+            <h3>Visual Conception</h3>
+            <p>This is where I explore your products requirements by developing scalable design concepts that egages
+              your audience and
+              informs them about your brand.
+            </p>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" height="512"
+              viewBox="0 0 512 512" width="512">
+              <g>
+                <path
+                  d="m468.195 367.616c0-5.389-2.891-10.363-7.573-13.032l-75.73-43.16 75.73-43.161c4.683-2.668 7.573-7.644 7.573-13.032 0-5.389-2.891-10.364-7.573-13.032l-75.73-43.16 75.73-43.16c4.683-2.668 7.573-7.643 7.573-13.032s-2.891-10.364-7.573-13.032l-197.195-112.384c-4.604-2.623-10.25-2.623-14.854 0l-197.196 112.383c-4.683 2.668-7.573 7.643-7.573 13.032s2.891 10.364 7.573 13.032l75.73 43.159-75.731 43.161c-4.682 2.668-7.572 7.644-7.572 13.032 0 5.389 2.891 10.364 7.572 13.032l75.732 43.161-75.731 43.16c-4.683 2.668-7.573 7.643-7.573 13.032s2.891 10.364 7.573 13.032l197.196 112.384c2.302 1.312 4.864 1.968 7.427 1.968s5.125-.656 7.427-1.968l197.195-112.384c4.683-2.667 7.573-7.642 7.573-13.031zm-212.195-129.65-37.104-21.146 166.906-95.117 37.099 21.143zm-102.801-58.587 166.91-95.115 35.398 20.174-166.906 95.117zm102.801-131.651 33.815 19.271-166.91 95.114-33.807-19.268zm-98.599 168.575 91.172 51.96c2.302 1.311 4.864 1.968 7.427 1.968s5.125-.656 7.427-1.968l91.171-51.96 68.304 38.928-166.902 95.121-166.902-95.122zm98.599 246.432-166.902-95.119 68.305-38.927 91.17 51.959c2.303 1.312 4.865 1.968 7.428 1.968s5.125-.656 7.428-1.968l91.17-51.96 68.304 38.928z" />
+                <path
+                  d="m15 90c8.283 0 15-6.716 15-15v-45h45c8.283 0 15-6.716 15-15s-6.717-15-15-15h-60c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15z" />
+                <path
+                  d="m75 482h-45v-45c0-8.284-6.717-15-15-15-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15h60c8.283 0 15-6.716 15-15s-6.717-15-15-15z" />
+                <path
+                  d="m497 422c-8.284 0-15 6.716-15 15v45h-45c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.283 0 15-6.716 15-15v-60c0-8.284-6.717-15-15-15z" />
+                <path
+                  d="m497 0h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h45v45c0 8.284 6.716 15 15 15 8.283 0 15-6.716 15-15v-60c0-8.284-6.717-15-15-15z" />
+              </g>
+            </svg>
+            <h3>Development & QA
+            </h3>
+            <p>Translation of the creative design into clean functional code offering seamless user
+              experience while focusing on QA in order to deliver a quality product to the customer.
+
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="section--img">
+        </div> -->
+      </section>
+
+      <section class="section section--works">
+        <p class="lead">Selected Works</p>
+
+        <h2 class="header-title">
+          <span>See what I'm capable of.</span>
+        </h2>
+        <div class="section--content">
+          <div>
+            <img src="https://cdn.dribbble.com/users/2278933/screenshots/4537807/triangle-dribble_1x.jpg"
+              class="img-responsive">
+            <a href="https://triangleinsightsgroup.com" target="_blank">
+              <div class="work-title">Triangle Insights Group <small>Design &amp; Wordpress Development</small></div>
+            </a>
+          </div>
+          <div>
+            <img src="https://hiiightower.github.io/img/works/tn-honey.jpg" class="img-responsive">
+            <a href="https://triangleinsightsgroup.com" target="_blank">
+              <div class="work-title">Honey Heads <small>Design & Front-End Development</small></div>
+            </a>
+          </div>
+          <div>
+            <img src="https://hiiightower.github.io/img/works/tn-honey.jpg" class="img-responsive">
+            <a href="https://triangleinsightsgroup.com" target="_blank">
+              <div class="work-title">Honey Heads <small>Design & Front-End Development</small></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer class="footer footer--container">
+      <div class="footer--title">
+        <h3>Got something on your mind?
+          <a href="#"
+            style="display: block;">&nbsp;iii&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@gmail.com</a>
+        </h3>
+      </div>
+      <div class="footer--content">
+
+        <div class="footer-content--section">
+          <h4 class="footer-title">Currently</h4>
+          <p class="footer-copy">Living in Tucson, AZ <br /> Avaliable for projects </p>
+        </div>
+        <div class="footer-content--section">
+          <h4 class="footer-title">Online</h4>
+          <p class="footer-copy"><a href="index.html">GitHub</a>&nbsp;&nbsp;<a href="index.html">Spotify</a></p>
         </div>
       </div>
-    </div>
-  </div>
 
+      <div class="footer--content" style="max-width: 100%; flex-basis: 100%;">
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1>Let's talk!</h1>
-          <p>
-            <a href="tel:15124503157" target="_blank">512 450 3157
-            </a><a class="resume" target="_blank" href="https://drive.google.com/file/d/1Y-wUtLp68_hJxa9GJ8tGyPWscbiGh9N-/view?usp=sharing">résumé</a>
-            <a class="link" target="_blank" href="mailto:hiiightower@gmail.com">hiiightower@gmail.com</a>
+        <div class="footer-content--section" style="max-width: 100%; flex-basis: 100%;">
+          <h4 class="footer-title">Contact</h4>
 
+          <p class="footer-copy">
+            <a href="index.html">512 450 3157</a>&nbsp;&nbsp;&nbsp;
+            <a style="display: inline-block;"
+              href="index.html">&nbsp;iii&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@gmail.com</a>
           </p>
 
         </div>
       </div>
-    </div>
-  </footer>
-</body>
+
+
+
+    </footer>
+    <div class="noise" id="container"></div>
+    <script>
+      var options = {
+        "animate": true,
+        "patternWidth": 400,
+        "patternHeight": 400,
+        "grainOpacity": 0.10,
+        "grainDensity": 1,
+        "grainWidth": 1,
+        "grainHeight": 1
+      }
+
+      grained("#container", options);
+
+      $(document).ready(function () {
+        changeColor("container", 179, 20, 224, 50, 0, 64);
+        // 46AFFF
+        // B314E0
+      });
+
+    </script>
+
+    <script type="text/javascript" src="./js/skew.js"></script>
+    <script type="text/javascript">
+      var myElements = document.querySelectorAll('[data-md-skew]');
+      myElements.forEach(function (myElement) {
+        var mdskew = new mdSkew(myElement, {
+          min: 0,
+          max: 2,
+          speed: 0.2,
+          setCSS: true,
+          reset: true,
+          transition: 'transform .6s cubic-bezier(.215,.61,.355,1)',
+        });
+        mdskew.init();
+
+      });
+
+      (function ($) {
+
+        $.fn.visible = function (partial) {
+
+          var $t = $(this),
+            $w = $(window),
+            viewTop = $w.scrollTop(),
+            viewBottom = viewTop + $w.height(),
+            _top = $t.offset().top,
+            _bottom = _top + $t.height(),
+            compareTop = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom;
+
+          return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+        };
+
+      })(jQuery);
+
+      $(window).scroll(function (event) {
+
+        // if ($(document).scrollTop() > 10) {
+        //   $("body").addClass("scroll");
+        // }
+
+        $("section.section").each(function (i, el) {
+          var el = $(el);
+          if (el.visible(true)) {
+            el.addClass("bounce");
+          } else {
+            el.removeClass("bounce");
+          }
+        });
+        $("h2").each(function (i, el) {
+          var el = $(el);
+          if (el.visible(true)) {
+            el.addClass("visible");
+          } else {
+            el.removeClass("visible");
+          }
+        });
+      });
+
+    </script>
+    <script>
+      var counter = document.querySelector(".percent");
+
+      TweenLite.set(counter, {
+        xPercent: -5,
+        yPercent: -5,
+      });
+
+      window.addEventListener("mousemove", moveCounter);
+
+      function moveCounter(e) {
+        TweenLite.to(counter, 0.5, {
+          x: e.clientX,
+          y: e.clientY,
+        });
+      }
+
+      function progress() {
+        var windowScrollTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var windowHeight = $(window).height();
+        var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
+
+        var $bgColor = progress > 99 ? "#fff" : "#fff";
+        var $textColor = progress > 99 ? "#fff" : "#333";
+
+        $(".fill")
+          .height(progress + "%")
+          .css({
+            backgroundColor: $bgColor
+          });
+      }
+      progress();
+      $(document).on("scroll", progress);
+
+    </script>
+
+
+
+  </body>
 
 </html>

@@ -1,0 +1,208 @@
+.section--intro {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
+.section--intro .tag {
+  align-items: center;
+  color: #eee;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  margin: 0;
+  font-weight: 600;
+}
+.section--intro h1 {
+  width: 88.88%;
+  margin-top: 60px;
+  color: #fff;
+  font-size: 45px;
+  line-height: 1.3;
+  font-weight: 700;
+  white-space: normal;
+  margin-bottom: 0;
+  font-family: Poppins, sans-serif;
+}
+.section--intro h1 > span {
+  color: #ffe53b;
+}
+.section--intro .intro-content {
+  margin-left: auto;
+  width: 50%;
+}
+.section--intro .intro-content .text {
+  color: #eee;
+  margin: 40px 0;
+  font-size: 1.01rem;
+  line-height: 1.8;
+}
+.section--intro .intro-contact {
+  position: absolute;
+  border: 0;
+  left: -4vw;
+  width: 22vw;
+  bottom: -3vw;
+}
+.section--intro .intro-contact a {
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.section--experience {
+  display: flex;
+  flex-direction: row;
+}
+.section--experience .section--content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 33%));
+  justify-items: stretch;
+  align-items: stretch;
+  color: white;
+  grid-row-gap: 40px;
+  width: 100%;
+}
+.section--experience .section--content h3 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.section--experience .section--content a {
+  color: #FFEB3B;
+  letter-spacing: 0.86px;
+  text-align: left;
+  font-weight: bold;
+  line-height: 18.48px;
+  margin-bottom: 10px;
+  display: block;
+}
+.section--experience .section--content p {
+  margin-top: 0;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.section--values {
+  display: flex;
+  flex-direction: row;
+}
+.section--values .header-title {
+  max-width: 66.66%;
+}
+.section--values .section--content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 33%));
+  grid-column-gap: 60px;
+  justify-items: stretch;
+  align-items: stretch;
+  color: white;
+  grid-row-gap: 60px;
+  max-width: 88.8%;
+}
+.section--values .section--content p {
+  padding: 0;
+  margin: 0;
+}
+
+.section--skills {
+  display: flex;
+  flex-direction: column;
+}
+.section--skills .section--content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #fff;
+  width: 100%;
+  max-width: 66.66%;
+  gap: 60px;
+}
+.section--skills .section--content .lead {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 20px !important;
+}
+.section--skills .section--content > div {
+  width: 100%;
+  max-width: 50%;
+}
+.section--skills ul {
+  padding: 0;
+  list-style: none;
+}
+.section--skills ul li {
+  padding-bottom: 13px;
+  font-size: 0.85rem;
+}
+
+.section--proccess {
+  display: flex;
+  flex-direction: column;
+}
+.section--proccess h2.header-title {
+  width: 88.88%;
+}
+.section--proccess .section--content {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  color: white;
+  align-content: space-between;
+  width: 100%;
+  gap: 60px;
+}
+.section--proccess .section--content p {
+  width: 88.88%;
+  margin: 0;
+}
+.section--proccess .section--content .header-title {
+  width: 66.61%;
+}
+
+.footer .footer--title h3 {
+  margin: 0;
+  font-size: 2.6rem;
+  width: 66.6vw;
+  padding: 0 2rem;
+}
+.footer .footer--title h3 a {
+  color: white;
+}
+
+.section--works {
+  display: flex;
+  max-width: 88vw;
+  flex-direction: column;
+  margin-left: auto;
+}
+.section--works .section--content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #fff;
+}
+.section--works .section--content > div {
+  width: 100%;
+  max-width: 50%;
+}
+.section--works .section--content > div:first-of-type {
+  margin-right: 120px;
+}
+.section--works .work-title {
+  color: #eee;
+  margin: 20px 0 20px 0;
+  font-size: 22px;
+  line-height: 1;
+}

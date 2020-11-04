@@ -1,9 +1,0 @@
-/*
- masonryHorizontal layout mode for Isotope
- v2.0.0
- http://isotope.metafizzy.co/layout-modes/masonryhorizontal.html
-*/
-(function(g,f){"function"===typeof define&&define.amd?define(["get-size/get-size","isotope/js/layout-mode"],f):"object"==typeof module&&module.exports?module.exports=f(require("get-size"),require("isotope-layout/js/layout-mode")):f(g.getSize,g.Isotope.LayoutMode)})(window,function(g,f){var h=f.create("masonryHorizontal"),e=h.prototype;e._resetLayout=function(){this.getRowHeight();this._getMeasurement("gutter","outerHeight");this.rowHeight+=this.gutter;this.rows=Math.floor((this.isotope.size.innerHeight+
-this.gutter)/this.rowHeight);var a=this.rows=Math.max(this.rows,1);for(this.rowXs=[];a--;)this.rowXs.push(0);this.maxX=0};e._getItemLayoutPosition=function(a){a.getSize();var c=a.size.outerHeight%this.rowHeight,c=Math[c&&1>c?"round":"ceil"](a.size.outerHeight/this.rowHeight),c=Math.min(c,this.rows),d=this._getRowGroup(c),b=Math.min.apply(Math,d),c=d.indexOf(b),e={x:b,y:this.rowHeight*c};a=b+a.size.outerWidth;d=this.rows+1-d.length;for(b=0;b<d;b++)this.rowXs[c+b]=a;return e};e._getRowGroup=function(a){if(2>
-a)return this.rowXs;for(var c=[],d=this.rows+1-a,b=0;b<d;b++){var e=this.rowXs.slice(b,b+a);c[b]=Math.max.apply(Math,e)}return c};e._manageStamp=function(a){var c=g(a);a=this.isotope._getElementOffset(a);var d=this._getOption("originTop")?a.top:a.bottom,b=d+c.outerHeight,d=Math.floor(d/this.rowHeight),d=Math.max(0,d),b=Math.floor(b/this.rowHeight),b=Math.min(this.rows-1,b),c=(this._getOption("originLeft")?a.left:a.right)+c.outerWidth;for(a=d;a<=b;a++)this.rowXs[a]=Math.max(c,this.rowXs[a])};e._getContainerSize=
-function(){this.maxX=Math.max.apply(Math,this.rowXs);return{width:this.maxX}};e.needsResizeLayout=function(){return this.needsVerticalResizeLayout()};return h});
