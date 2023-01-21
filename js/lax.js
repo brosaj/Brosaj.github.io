@@ -1,29 +1,7 @@
-var footer = $('.footer--container');
+
 var extra = 0;
 var mainContainer = $('.section--container');
 var contentContainer = $('main.content');
-
-$(window).scroll(function () {
-
-    var scrolledLength = ($(window).height() + extra) + $(window).scrollTop(),
-        documentHeight = $(document).height();
-
-
-    if (scrolledLength >= documentHeight) {
-        // mainContainer.css({'margin-bottom': '300px'})
-        footer.addClass('footer--active')
-        contentContainer.addClass('blur')
-    }
-    else if (scrolledLength <= documentHeight && footer.hasClass('footer--active')) {
-        footer.removeClass('footer--active')
-        contentContainer.removeClass('blur')
-
-
-
-    }
-    
-});
-
 
 // bg change color
 
