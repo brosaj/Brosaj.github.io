@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -409,7 +409,22 @@
 
       });
 
-      
+      (function ($) {
+
+        $.fn.visible = function (partial) {
+
+          var $t = $(this),
+            $w = $(window),
+            viewTop = $w.scrollTop(),
+            viewBottom = viewTop + $w.height(),
+            _top = $t.offset().top,
+            _bottom = _top + $t.height(),
+            compareTop = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom;
+
+          return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+        };
 
       })(jQuery);
 
@@ -455,7 +470,23 @@
         });
       }
 
-     
+      function progress() {
+        var windowScrollTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var windowHeight = $(window).height();
+        var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
+
+        var $bgColor = progress > 99 ? "#fff" : "#fff";
+        var $textColor = progress > 99 ? "#fff" : "#333";
+
+        $(".fill")
+          .height(progress + "%")
+          .css({
+            backgroundColor: $bgColor
+          });
+      }
+      progress();
+      $(document).on("scroll", progress);
 
     </script>
 
