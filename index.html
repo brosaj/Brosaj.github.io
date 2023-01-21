@@ -393,38 +393,8 @@
 
     </script>
 
-    <script type="text/javascript" src="./js/skew.js"></script>
     <script type="text/javascript">
-      var myElements = document.querySelectorAll('[data-md-skew]');
-      myElements.forEach(function (myElement) {
-        var mdskew = new mdSkew(myElement, {
-          min: 0,
-          max: 2,
-          speed: 0.2,
-          setCSS: true,
-          reset: true,
-          transition: 'transform .6s cubic-bezier(.215,.61,.355,1)',
-        });
-        mdskew.init();
-
-      });
-
-      (function ($) {
-
-        $.fn.visible = function (partial) {
-
-          var $t = $(this),
-            $w = $(window),
-            viewTop = $w.scrollTop(),
-            viewBottom = viewTop + $w.height(),
-            _top = $t.offset().top,
-            _bottom = _top + $t.height(),
-            compareTop = partial === true ? _bottom : _top,
-            compareBottom = partial === true ? _top : _bottom;
-
-          return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-        };
+     
 
       })(jQuery);
 
@@ -469,26 +439,6 @@
           y: e.clientY,
         });
       }
-
-      function progress() {
-        var windowScrollTop = $(window).scrollTop();
-        var docHeight = $(document).height();
-        var windowHeight = $(window).height();
-        var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
-
-        var $bgColor = progress > 99 ? "#fff" : "#fff";
-        var $textColor = progress > 99 ? "#fff" : "#333";
-
-        $(".fill")
-          .height(progress + "%")
-          .css({
-            backgroundColor: $bgColor
-          });
-      }
-      progress();
-      $(document).on("scroll", progress);
-
-    </script>
 
 
 
