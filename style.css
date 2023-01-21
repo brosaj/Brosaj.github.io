@@ -279,13 +279,6 @@ footer.footer canvas {
     margin-bottom: 0.88rem;
 }
 
-.footer--content .footer-title {
-    margin: 0; 
-    font-size: 1.2rem;
-    /* font-weight: 700; */
-    margin-bottom: 0.88rem;
-}
-
 .footer--content .footer-copy,
 .footer--content .footer-copy a {
     /* line-height: 1.5; */
@@ -360,4 +353,13 @@ h2.header-title.visible {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.section--proccess .section--content .content-item {
+    /* width: 43%; */
+    padding-right: 6%;
+}
+
+section.section.section--intro.bounce {
+    /* justify-content: space-evenly; */
 }
