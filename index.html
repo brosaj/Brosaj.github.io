@@ -13,8 +13,8 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/noise.js"></script>
-    <script type="text/javascript" src="./js/lax.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+
   </head>
 
   <body class="body">
@@ -396,8 +396,6 @@
     <script type="text/javascript">
      
 
-      })(jQuery);
-
       $(window).scroll(function (event) {
 
         // if ($(document).scrollTop() > 10) {
@@ -423,22 +421,7 @@
       });
 
     </script>
-    <script>
-      var counter = document.querySelector(".percent");
 
-      TweenLite.set(counter, {
-        xPercent: -5,
-        yPercent: -5,
-      });
-
-      window.addEventListener("mousemove", moveCounter);
-
-      function moveCounter(e) {
-        TweenLite.to(counter, 0.5, {
-          x: e.clientX,
-          y: e.clientY,
-        });
-      }
 
 
 
