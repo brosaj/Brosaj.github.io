@@ -1,4 +1,3 @@
-
 var footer = $('.footer--container');
 var extra = 0;
 var mainContainer = $('.section--container');
@@ -31,7 +30,7 @@ $(window).scroll(function () {
 //GRADUALLY CHANGE BACKGROUND COLOR WHILE SCROLLING
 
 //function parameters:
-//ElemId: targeted element
+//ElemId: targeted element 
 //r1,g1,b1: starting color
 //r2,g2,b2: finishing color
 //scrollFromTop (in px): how much scrollTop until complete color change. can element height value too.
